@@ -1,0 +1,8 @@
+name: Output automation
+on: workflow_dispath
+jobs:
+    info:
+        run-on: ubuntu-latest
+        steps:
+            - name: Output Github context
+              run: echo "${{toJSON(github)}}"
